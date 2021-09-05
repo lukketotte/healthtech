@@ -1,0 +1,18 @@
+export const theme = {
+  primaryDark: '#0D0C1D',
+  secondaryDark: '#352140',
+  primaryLight: '#EFFFFA',
+  secondaryLight: 'gray',
+  primaryHover: '#343078',
+  primaryAccent: '#0C7AE7',
+  primaryAccentHover: '#08519b',
+  primaryBackground: '#e8eaf6',
+  delete: '#c4214a',
+  hoverDelete: '#ee2255',
+  add: '#45b13b',
+  addHover: '#56dd49',
+  mobile: '576px',
+  sm: '767px',
+  md: '1024px',
+  lg: '1440px',
+};
