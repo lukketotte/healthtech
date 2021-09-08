@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 const HeaderDiv = styled.header`
   position: relative;
@@ -34,14 +35,15 @@ const H1 = styled.h1`
   text-align: center;
 `;
 
-const Links = styled.div`
+const Links = styled.nav`
   align-items: center;
   color: whitesmoke;
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   background-image: -webkit-linear-gradient(left, whitesmoke, whitesmoke);
   -webkit-background-clip: text;
+  background-clip: text;
   font-weight: 500;
   color: whitesmoke;
   -webkit-text-fill-color: transparent;
@@ -75,8 +77,20 @@ const Header = () => {
     <HeaderDiv>
       <H1>Keyframe Healthtech</H1>
       <Links>
-        <StyledLink>What we do</StyledLink> <StyledLink>Why we do</StyledLink>{' '}
-        <StyledLink>About us</StyledLink>
+        <StyledLink
+          onClick={() => console.log('clicked')}
+          to='service'
+          spy={true}
+          smooth={true}
+        >
+          What we do
+        </StyledLink>
+        <StyledLink to='contact' spy={true} smooth={true}>
+          Why we do
+        </StyledLink>
+        <StyledLink to='about' spy={true} smooth={true}>
+          About us
+        </StyledLink>
       </Links>
     </HeaderDiv>
   );
