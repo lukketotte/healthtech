@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-
+//var Scroll = require('react-scroll');
+//let Link = Scroll.Link;
 const HeaderDiv = styled.header`
   position: relative;
   display: flex;
@@ -77,12 +78,7 @@ const Header = () => {
     <HeaderDiv>
       <H1>Keyframe Healthtech</H1>
       <Links>
-        <StyledLink
-          onClick={() => console.log('clicked')}
-          to='service'
-          spy={true}
-          smooth={true}
-        >
+        <StyledLink to='service' spy={true} smooth={true} activeClass='active'>
           What we do
         </StyledLink>
         <StyledLink to='contact' spy={true} smooth={true}>
