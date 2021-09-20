@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { Header, StyledLink } from './Styled';
-import { Card } from './team/Card';
+import Card from './team/Card';
+import Team from './team/Team';
+
 const Container = styled.div`
-  max-width: 800px;
+  max-width: 1000px;
 `;
 
 const BodyDiv = styled.div`
@@ -83,7 +85,7 @@ const Body = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
           repellendus. Totam nihil similique a repellat minus dolor amet quasi.
           Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
-          <Card />
+          <Team />
         </Container>
       </BodyDiv>
     </>
