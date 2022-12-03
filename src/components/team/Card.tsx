@@ -44,6 +44,8 @@ const Li = styled.li`
 
 interface CardProps {
   img?: string;
+  gitlink?: string;
+  linkedin?: string;
 }
 
 const Card: React.FC<CardProps> = ({ img }) => {

@@ -47,54 +47,48 @@ const Body = () => {
       <Header>
         <H1>Keyframe Healthtech</H1>
         <Links>
-          <StyledLink onClick={() => scrollTo(whatRef)}>Vad vi gör</StyledLink>
-          <StyledLink onClick={() => scrollTo(whyRef)}>Om oss</StyledLink>
+          <StyledLink onClick={() => scrollTo(whatRef)}>What</StyledLink>
+          <StyledLink onClick={() => scrollTo(whyRef)}>Why</StyledLink>
           <StyledLink onClick={() => scrollTo(tumlyRef)}>Tumly</StyledLink>
-          <StyledLink onClick={() => scrollTo(aboutRef)}>
-            Vilka är vi
-          </StyledLink>
+          <StyledLink onClick={() => scrollTo(aboutRef)}>About us</StyledLink>
         </Links>
       </Header>
       <BodyDiv>
         <Container ref={whatRef} id='home'>
-          <h1>Vad vi gör</h1>
-          KFHT har utvecklat en app som hjälper vem som helst att få bättre
-          insikt i hur sin mage fungerar och vad det är som påverkar den. Med
-          hjälp av intelligent AI kan vi hjälpa våra användare att hitta
-          kopplingar mellan kost, livsstil och magens välmående. Vår app kan
-          också användas som underlag för att dietister eller läkare ska kunna
-          få en överblick av viktiga aspekter kring användarnas maghälsa.
+          <h1>What We Do</h1>
+          Keyframe Healthtech develops digital tools that assist people in understanding what
+          affects their belly and how problems can be avoided. Using machine learning our upcoming
+          platform Tumly can help users find connections between their diets, lifestyles and the
+          wellbeing of their bellies. Tumly can also be used to give statistical data to dieticians
+          and doctors, helping them get a more complete picture of their patients’ health state.
         </Container>
         <Container ref={whyRef} id='about'>
-          <h1>Om oss</h1>
-          Känner du någon som har problem med magen ibland men som inte vet inte
-          exakt vad i kosten och livsstilen som orsakar de problemen? Det här
-          var en fråga som vi grundare och våra bekanta kände att sjukvården
-          ofta inte kan svara på. Därför ville vi med vår breda kunskap inom
-          statistik och artificiell intelligens utveckla smarta verktyg som kan
-          berätta för människor vilka samband som finns mellan deras beteende
-          och maghälsa. Ur denna idé skapade vi Key Frame Healthtech. Med stöd
-          från djupgående marknadsundersökningar med läkare och dietister kan
-          vår app samla in information som ger relevant återkoppling kring
-          användarnas maghälsa och presenterar denna på ett lättförståeligt
-          sätt.
+          <h1>Why we do it</h1>
+          Do you know anyone who sometimes has tummy troubles but doesn’t know exactly what the
+          underlying problem is? This is the question the founders of Keyframe Healthtech felt that
+          too many people were asking. At the same time, not enough answers were given from today’s
+          healthcare systems, resulting in people having to live with their problems. The founding
+          of Keyframe Healthtech sprung from our will to use our wide knowledge in statistics and
+          artificial intelligence to help people connect the dots between their lifestyle and how
+          their belly reacts.
         </Container>
         <Container ref={tumlyRef} id='tumly'>
-          <h1>tumly</h1>
-          Har du ibland, eller t.o.m. ofta problem med din mage och skulle vilja
-          förstå den bättre? Med Tumly får du ett intelligent och praktiskt
-          verktyg som kan hjälpa dig se samband med din livsstil och din
-          maghälsa. Mer information hittar du på www.tumly.se.
+          <h1>Tumly</h1>
+          What Is Tumly Do you ever feel that your belly bothers you and that you would like to get
+          to know it better? With Tumly you get an intelligent and practical tool that can help you
+          see connections between your lifestyle and your tummy’s behaviour. Tumly can also compare
+          your situation to a huge database of the lifestyles and tummy troubles of other anonymous
+          users. By comparing similarities and differences between you and groups of other users,
+          Tumly can help you find patterns of behaviour that could be beneficial for you to either
+          copy or avoid. Find more information at www.tumly.se
         </Container>
         <Container ref={aboutRef} id='aboutus'>
-          <h1>Vilka är vi</h1>
-          Gemensamt för grundarna är att vi studerat vid Uppsala universitet.
-          Tillsammans har vi flera examen inom statistik, ekonomi,
-          civilingenjörsprogram och en pågående doktorsavhandling inom statistik
-          och tillämpning av artificiell intelligens. Vår tekniska kompetens
-          tillsammans med personliga erfarenheter och kontakter ger oss goda
-          förutsättningar för att utveckla verktyg som erbjuder våra användare
-          en helt ny typ av produkt och upplevelse.
+          <h1> Who we are</h1>
+          From studies in Uppsala the founders of Keyframe Healthtech have a variety of bachelor´s
+          and master’s degrees in statistics, business, economics, engineering and an ongoing Phd in
+          statistics and data science. The different dynamics in our backgrounds and personalities
+          have created an atmosphere where we can create innovations that help and benefit a large
+          portion of the population.
           <Team />
         </Container>
       </BodyDiv>
