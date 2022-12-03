@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './LinkButton';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { TeamProps } from './Teamlist';
 
 const Container = styled.div`
   display: flex;
@@ -42,17 +43,11 @@ const Li = styled.li`
   display: inline-block;
 `;
 
-interface CardProps {
-  img?: string;
-  gitlink?: string;
-  linkedin?: string;
-}
-
-const Card: React.FC<CardProps> = ({ img }) => {
+const Card: React.FC<TeamProps> = ({ name, img, position, github, linkedin, email }) => {
   return (
     <Container>
-      <Img src={'https://avatars.githubusercontent.com/u/19249827?v=4'} />
-      <H5>Lukas Arnroth</H5>
+      <Img src={img} alt={name} />
+      <H5>{name}</H5>
       <H6>CEO - Founder</H6>
       <div
         style={{

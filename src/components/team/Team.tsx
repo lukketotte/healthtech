@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from './Card';
+import { TeamList } from './Teamlist';
 
 const Container = styled.div`
   display: grid;
@@ -12,10 +13,9 @@ const Container = styled.div`
 const Team = () => {
   return (
     <Container>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {TeamList.map((ind, idx) => (
+        <Card img={ind.img} name={ind.name} email={ind.email} position={ind.position} key={idx} />
+      ))}
     </Container>
   );
 };

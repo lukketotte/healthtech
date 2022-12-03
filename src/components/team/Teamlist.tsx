@@ -1,4 +1,4 @@
-import Lukas from './media/prof.jpeg';
+import Lukas from './media/lukas.jpg';
 import Jonni from './media/Bild_Jonni.jpeg';
 
 export interface TeamProps {
