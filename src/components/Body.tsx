@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { Header, StyledLink } from './Styled';
-import Card from './team/Card';
 import Team from './team/Team';
 
 const Container = styled.div`
