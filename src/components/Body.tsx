@@ -2,9 +2,10 @@ import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { Header, StyledLink } from './Styled';
 import Team from './team/Team';
+import Footer from './Footer';
 
 const Container = styled.div`
-  max-width: 800px;
+  max-width: 600px;
   line-height: 1.5;
   padding: 10px 0px 10px 0px;
 `;
@@ -91,6 +92,7 @@ const Body = () => {
           <Team />
         </Container>
       </BodyDiv>
+      <Footer />
     </>
   );
 };

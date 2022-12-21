@@ -38,9 +38,10 @@ const H6 = styled.h5`
   font-weight: 300;
 `;
 
-const Li = styled.li`
+const A = styled.a`
   list-style: none;
   display: inline-block;
+  margin: 0px 2px 0px 2px;
 `;
 
 const Card: React.FC<TeamProps> = ({ name, img, position, github, linkedin, email }) => {
@@ -48,23 +49,27 @@ const Card: React.FC<TeamProps> = ({ name, img, position, github, linkedin, emai
     <Container>
       <Img src={img} alt={name} />
       <H5>{name}</H5>
-      <H6>CEO - Founder</H6>
+      <H6>{position} - Founder</H6>
       <div
         style={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           width: '110px',
         }}
       >
-        <Li>
-          <Button Icon={AiFillGithub} />
-        </Li>
-        <Li>
-          <Button Icon={AiFillLinkedin} />
-        </Li>
-        <Li>
+        {linkedin && (
+          <A href={linkedin}>
+            <Button Icon={AiFillLinkedin} />
+          </A>
+        )}
+        <A href={`mailto: ${email}`}>
           <Button Icon={AiOutlineMail} />
-        </Li>
+        </A>
+        {github && (
+          <A href={github}>
+            <Button Icon={AiFillGithub} />
+          </A>
+        )}
       </div>
     </Container>
   );
